@@ -5,13 +5,12 @@ st.set_page_config(
     layout="centered"
 )
 
-st.title("💍 Marriage Biodata")
+st.title("Purushottam Vyankatrao Barde")
 
 # ---------------- PERSONAL DETAILS ----------------
 st.header("🧑 Personal Details")
 
 st.markdown("""
-**Name:** Purushottam Vyankatrao Barde  
 **Birth Date:** 17/10/1997  
 **Birth Time:** 06:00 PM  
 **Birth Place:** Jalna, Maharashtra  
@@ -27,7 +26,7 @@ st.divider()
 st.header("🎓 Education & Career")
 
 st.markdown("""
-**Education:** BE, MBA  
+**Education:** BE (Mechanical), MBA  
 **Profession:** Data Scientist  
 **Job Location:** Pune  
 **Annual Income:** ₹11.20 LPA  
@@ -81,3 +80,4 @@ st.markdown(f"""
 
 # ---------------------------------------------
 st.divider()
+
