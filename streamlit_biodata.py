@@ -232,64 +232,14 @@ with tab4:
     📞 9420911612  
     """)
     st.markdown("## 🌐 Connect With Me")
-import webbrowser
-from st_image_button import st_image_button
+    st.markdown("### 🌐 Connect With Me")
 
-with tab4:
-
-    st.markdown("## 🌐 Connect With Me")
-
-    col1, col2, col3, col4 = st.columns(4)
-
-    # LinkedIn
-    with col1:
-        if st_image_button(
-            "LinkedIn",
-            "youtube.png",
-            "60px",
-            "ghost"
-        ):
-            webbrowser.open("https://www.linkedin.com/in/purushottam-barde-9687b51aa/")
-
-    # YouTube
-    with col2:
-        if st_image_button(
-            "YouTube",
-            "youtube.png.png",
-            "60px",
-            "ghost"
-        ):
-            webbrowser.open("https://www.youtube.com/@purushottam_barde")
-
-    # WhatsApp
-    with col3:
-        if st_image_button(
-            "WhatsApp",
-            "https://cdn-icons-png.flaticon.com/512/733/733585.png",
-            "60px",
-            "ghost"
-        ):
-            webbrowser.open("https://wa.me/919420911612")
-
-    # GitHub
-    with col4:
-        if st_image_button(
-            "GitHub",
-            "https://cdn-icons-png.flaticon.com/512/733/733553.png",
-            "60px",
-            "ghost"
-        ):
-            webbrowser.open("https://github.com/purushottambarde17")
-
-
-    # st.markdown("### 🌐 Connect With Me")
-
-    # st.markdown("""
-    # <a href="https://www.linkedin.com/in/purushottam-barde-9687b51aa/" class="social-btn linkedin" target="_blank">LinkedIn</a>
-    # <a href="https://www.youtube.com/@purushottam_barde" class="social-btn youtube" target="_blank">YouTube</a>
-    # <a href="https://wa.me/919420911612" class="social-btn whatsapp" target="_blank">WhatsApp</a>
-    # <a href="https://github.com/purushottambarde17" class="social-btn github" target="_blank">GitHub</a>
-    # """, unsafe_allow_html=True)
+    st.markdown("""
+    <a href="https://www.linkedin.com/in/purushottam-barde-9687b51aa/" class="social-btn linkedin" target="_blank">LinkedIn</a>
+    <a href="https://www.youtube.com/@purushottam_barde" class="social-btn youtube" target="_blank">YouTube</a>
+    <a href="https://wa.me/919420911612" class="social-btn whatsapp" target="_blank">WhatsApp</a>
+    <a href="https://github.com/purushottambarde17" class="social-btn github" target="_blank">GitHub</a>
+    """, unsafe_allow_html=True)
 
     time.sleep(10)
     st.success("Thank you for visiting my personal portfolio!✨")
@@ -297,6 +247,7 @@ with tab4:
 # DOWNLOAD BIODATA BUTTON
 # -------------------------------------------------
 st.divider()
+
 
 
 
