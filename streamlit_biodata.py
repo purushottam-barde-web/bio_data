@@ -70,7 +70,7 @@ body {
 # -------------------------------------------------
 # HEADER SECTION
 # -------------------------------------------------
-col1, col2 = st.columns([1,2])
+col1, col2 = st.columns([0.4,0.6])
 
 with col1:
     image = Image.open(r"Profile_image.jpg")  
@@ -195,6 +195,7 @@ st.download_button(
 )
 
 st.success("Thank you for visiting my personal portfolio!✨")
+
 
 
 
