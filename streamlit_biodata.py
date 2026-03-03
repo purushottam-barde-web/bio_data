@@ -268,5 +268,6 @@ st.divider()
 
 placeholder = st.empty()
 placeholder.success("Thank you for visiting my personal portfolio! ✨")
-time.sleep(2)
+time.sleep(5)
 placeholder.empty()  
+
