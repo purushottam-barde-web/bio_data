@@ -75,7 +75,7 @@ body {
 col1, col2 = st.columns([1,2])
 
 with col1:
-    image = Image.open(r"Artifacts\pic1.jpg")  
+    image = Image.open(r"Profile_image.jpg")  
     st.image(image, use_container_width=True)
 
 with col2:
@@ -197,4 +197,5 @@ st.download_button(
 )
 
 st.success("Thank you for visiting my personal portfolio!✨")
+
 
