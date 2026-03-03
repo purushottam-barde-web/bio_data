@@ -6,7 +6,7 @@ import base64
 # PAGE CONFIG
 # -------------------------------------------------
 st.set_page_config(
-    page_title="Purushottam Barde | Personal Portfolio",
+    page_title="Purushottam's Personal Portfolio",
     page_icon="🚀",
     layout="wide"
 )
@@ -75,7 +75,7 @@ body {
 col1, col2 = st.columns([1,2])
 
 with col1:
-    image = Image.open(r"C:\Users\vishn\Desktop\New folder\pic1.jpg")  # 🔁 Replace with your image path
+    image = Image.open(r"Artifacts\pic1.jpg")  
     st.image(image, use_container_width=True)
 
 with col2:
@@ -196,4 +196,5 @@ st.download_button(
     mime="text/plain"
 )
 
-st.success("✨ Thank you for visiting my personal portfolio!")
+st.success("Thank you for visiting my personal portfolio!✨")
+
