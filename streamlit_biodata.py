@@ -232,7 +232,7 @@ with tab4:
     📞 9420911612  
     """)
     st.markdown("### 🌐 Connect With Me")
-ta1, ta2, ta3, ta4 = st.Columns(4)
+ta1, ta2, ta3, ta4 = st.columns(4)
 # ["LinkedIn", "YouTube", "WhatsApp", "Github"]
 with ta1:
     st.markdown("""
@@ -264,6 +264,7 @@ with ta4:
 # DOWNLOAD BIODATA BUTTON
 # -------------------------------------------------
 st.divider()
+
 
 
 
