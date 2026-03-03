@@ -232,7 +232,7 @@ with tab4:
     📞 9420911612  
     """)
     st.markdown("### 🌐 Connect With Me")
-ta1, ta2, ta3, ta4 = st.tabs(["LinkedIn", "YouTube", "WhatsApp", "Github"])
+ta1, ta2, ta3, ta4 = st.Column(["LinkedIn", "YouTube", "WhatsApp", "Github"])
 with ta1:
     st.markdown("""
     <a href="https://www.linkedin.com/in/purushottam-barde-9687b51aa/" class="social-btn linkedin" target="_blank">LinkedIn</a>
@@ -263,6 +263,7 @@ with ta4:
 # DOWNLOAD BIODATA BUTTON
 # -------------------------------------------------
 st.divider()
+
 
 
 
