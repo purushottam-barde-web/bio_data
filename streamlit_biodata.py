@@ -258,12 +258,13 @@ with tab4:
     # <a href="https://github.com/purushottambarde17" class="social-btn github" target="_blank">GitHub</a>
     # """, unsafe_allow_html=True)
 
-    time.sleep(10)
+    time.sleep(2)
     st.success("Thank you for visiting my personal portfolio!✨")
 # -------------------------------------------------
 # DOWNLOAD BIODATA BUTTON
 # -------------------------------------------------
 st.divider()
+
 
 
 
