@@ -169,32 +169,57 @@ with tab2:
 # PROJECT SHOWCASE
 # -------------------------------------------------
 with tab3:
+    
+    # CSS for Project Cards (Black Font + Premium Look)
+    st.markdown("""
+    <style>
+    .project-card {
+        background-color: #ffffff;
+        padding: 18px;
+        border-radius: 15px;
+        margin-bottom: 18px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        color: #000000;
+    }
+
+    .project-card h4 {
+        color: #000000;
+        margin-bottom: 6px;
+    }
+
+    .project-card p {
+        color: #000000;
+        font-size: 15px;
+        margin: 0;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
     st.markdown("## 🚀 Featured Projects")
 
     st.markdown("""
     <div class="project-card">
-    <h4>Charlie – Enterprise GenAI Chatbot</h4>
-    <p>Built enterprise-grade chatbot using RAG, Vertex AI & BigQuery.
-    Deployed on GCP with Docker & CI/CD automation.</p>
+        <h4>Charlie – Enterprise GenAI Chatbot</h4>
+        <p>Built enterprise-grade chatbot using RAG, Vertex AI & BigQuery.
+        Deployed on GCP with Docker & CI/CD automation.</p>
     </div>
     """, unsafe_allow_html=True)
 
     st.markdown("""
     <div class="project-card">
-    <h4>Invoice NER Model</h4>
-    <p>Custom Named Entity Recognition model to extract invoice numbers
-    with high precision for financial automation.</p>
+        <h4>Invoice NER Model</h4>
+        <p>Custom Named Entity Recognition model to extract invoice numbers
+        with high precision for financial automation.</p>
     </div>
     """, unsafe_allow_html=True)
 
     st.markdown("""
     <div class="project-card">
-    <h4>Hybrid RAG Architecture</h4>
-    <p>Implemented metadata filtering & embedding optimization
-    for enterprise secure data retrieval.</p>
+        <h4>Hybrid RAG Architecture</h4>
+        <p>Implemented metadata filtering & embedding optimization
+        for enterprise secure data retrieval.</p>
     </div>
     """, unsafe_allow_html=True)
-
 # -------------------------------------------------
 # CONTACT & SOCIAL LINKS
 # -------------------------------------------------
@@ -219,6 +244,7 @@ with tab4:
 # DOWNLOAD BIODATA BUTTON
 # -------------------------------------------------
 st.divider()
+
 
 
 
