@@ -1,55 +1,61 @@
 import streamlit as st
 from PIL import Image
-import base64
 
-# -------------------------------------------------
-# PAGE CONFIG
-# -------------------------------------------------
 st.set_page_config(
     page_title="Purushottam's Personal Portfolio",
-    page_icon="🧑‍💼")
+    page_icon="🧑‍💼",
+    layout="centered"
+)
 
 # -------------------------------------------------
-# CUSTOM CSS (Premium UI Styling)
+# RESPONSIVE PREMIUM CSS
 # -------------------------------------------------
 st.markdown("""
 <style>
+
+/* Background */
 body {
     background: linear-gradient(to right, #1f4037, #99f2c8);
 }
 
+/* Main card */
 .main {
-    background-color: rgba(255,255,255,0.95);
-    padding: 2rem;
+    background-color: rgba(255,255,255,0.97);
+    padding: 1.5rem;
     border-radius: 20px;
 }
 
-.profile-card {
-    text-align: center;
-    padding: 20px;
-}
-
+/* Profile image responsive */
 .profile-img {
     border-radius: 50%;
-    width: 220px;
-    border: 5px solid #00c6ff;
+    width: 180px;
+    max-width: 100%;
+    height: auto;
+    border: 4px solid #00c6ff;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+/* Section Titles */
 .section-title {
-    font-size: 28px;
+    font-size: 22px;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 15px;
     color: #0f2027;
+    text-align: center;
 }
 
+/* Social Buttons */
 .social-btn {
-    display: inline-block;
-    padding: 10px 18px;
-    margin: 5px;
+    display: block;
+    padding: 12px;
+    margin: 8px 0;
     border-radius: 10px;
     text-decoration: none;
     color: white;
     font-weight: bold;
+    text-align: center;
 }
 
 .linkedin {background-color:#0077b5;}
@@ -57,6 +63,7 @@ body {
 .whatsapp {background-color:#25D366;}
 .github {background-color:#333;}
 
+/* Project Cards */
 .project-card {
     background-color: #f7f7f7;
     padding: 15px;
@@ -64,26 +71,44 @@ body {
     margin-bottom: 15px;
     box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
 }
+
+/* Responsive for small screens */
+@media (max-width: 768px) {
+    .profile-img {
+        width: 140px;
+    }
+
+    .section-title {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 24px !important;
+    }
+
+    h2 {
+        font-size: 20px !important;
+    }
+}
+
 </style>
 """, unsafe_allow_html=True)
 
 # -------------------------------------------------
-# HEADER SECTION
+# MOBILE FRIENDLY HEADER (STACKED)
 # -------------------------------------------------
-col1, col2 = st.columns([0.4,0.6])
+st.markdown("<div style='text-align:center'>", unsafe_allow_html=True)
 
-with col1:
-    image = Image.open(r"Profile_image.jpg")  
-    st.image(image, use_container_width=True)
+image = Image.open("Profile_image.jpg")
+st.image(image, use_container_width=False, width=180)
 
-with col2:
-    st.title("Purushottam Vyankatrao Barde 🚀")
-    st.subheader("Data Scientist | GenAI Engineer | ML Enthusiast")
-    st.write("Building Intelligent Systems with AI, LLMs & Cloud ☁️")
+st.title("Purushottam Vyankatrao Barde 🚀")
+st.markdown("### Data Scientist | GenAI Engineer")
+st.write("Building Intelligent Systems with AI, LLMs & Cloud ☁️")
 
-# -------------------------------------------------
+st.markdown("</div>", unsafe_allow_html=True)
+
 st.divider()
-
 # -------------------------------------------------
 # TABS FOR HIGH ENGAGEMENT
 # -------------------------------------------------
@@ -194,6 +219,7 @@ with tab4:
 # DOWNLOAD BIODATA BUTTON
 # -------------------------------------------------
 st.divider()
+
 
 
 
