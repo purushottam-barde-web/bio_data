@@ -232,51 +232,54 @@ with tab4:
     📞 9420911612  
     """)
     st.markdown("## 🌐 Connect With Me")
+import webbrowser
+from st_image_button import st_image_button
 
-    # CSS for image buttons
-    st.markdown("""
-    <style>
-    .social-container {
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-        flex-wrap: wrap;
-        margin-top: 20px;
-    }
+with tab4:
 
-    .social-container img {
-        width: 60px;
-        transition: transform 0.3s ease;
-        cursor: pointer;
-    }
+    st.markdown("## 🌐 Connect With Me")
 
-    .social-container img:hover {
-        transform: scale(1.2);
-    }
-    </style>
-    """, unsafe_allow_html=True)
+    col1, col2, col3, col4 = st.columns(4)
 
-    st.markdown("""
-    <div class="social-container">
+    # LinkedIn
+    with col1:
+        if st_image_button(
+            "LinkedIn",
+            "youtube.png",
+            "60px",
+            "ghost"
+        ):
+            webbrowser.open("https://www.linkedin.com/in/purushottam-barde-9687b51aa/")
 
-        <a href="https://www.linkedin.com/in/purushottam-barde-9687b51aa/" target="_blank">
-            <img src="youtube.png">
-        </a>
+    # YouTube
+    with col2:
+        if st_image_button(
+            "YouTube",
+            "youtube.png.png",
+            "60px",
+            "ghost"
+        ):
+            webbrowser.open("https://www.youtube.com/@purushottam_barde")
 
-        <a href="https://www.youtube.com/@purushottam_barde" target="_blank">
-            <img src="youtube.png">
-        </a>
+    # WhatsApp
+    with col3:
+        if st_image_button(
+            "WhatsApp",
+            "https://cdn-icons-png.flaticon.com/512/733/733585.png",
+            "60px",
+            "ghost"
+        ):
+            webbrowser.open("https://wa.me/919420911612")
 
-        <a href="https://wa.me/919420911612" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
-        </a>
-
-        <a href="https://github.com/purushottambarde17" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png">
-        </a>
-
-    </div>
-    """, unsafe_allow_html=True)
+    # GitHub
+    with col4:
+        if st_image_button(
+            "GitHub",
+            "https://cdn-icons-png.flaticon.com/512/733/733553.png",
+            "60px",
+            "ghost"
+        ):
+            webbrowser.open("https://github.com/purushottambarde17")
 
 
     # st.markdown("### 🌐 Connect With Me")
@@ -294,6 +297,7 @@ with tab4:
 # DOWNLOAD BIODATA BUTTON
 # -------------------------------------------------
 st.divider()
+
 
 
 
