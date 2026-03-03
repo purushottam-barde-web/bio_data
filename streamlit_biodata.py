@@ -7,9 +7,7 @@ import base64
 # -------------------------------------------------
 st.set_page_config(
     page_title="Purushottam's Personal Portfolio",
-    page_icon="🚀",
-    layout="wide"
-)
+    page_icon="🧑‍💼")
 
 # -------------------------------------------------
 # CUSTOM CSS (Premium UI Styling)
@@ -197,5 +195,6 @@ st.download_button(
 )
 
 st.success("Thank you for visiting my personal portfolio!✨")
+
 
 
