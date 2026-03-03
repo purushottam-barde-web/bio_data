@@ -109,6 +109,13 @@ with tab1:
     LLMOps, and Enterprise AI solutions. I love solving real-world
     problems using intelligent automation.
     """)
+    
+    st.download_button(
+        label="📄 Download My Biodata",
+        data="Purushottam Vyankatrao Barde - Data Scientist",
+        file_name="Purushottam_Barde_Biodata.txt",
+        mime="text/plain"
+    )
 
 # -------------------------------------------------
 # EDUCATION & SKILLS
@@ -188,12 +195,6 @@ with tab4:
 # -------------------------------------------------
 st.divider()
 
-st.download_button(
-    label="📄 Download My Biodata",
-    data="Purushottam Vyankatrao Barde - Data Scientist",
-    file_name="Purushottam_Barde_Biodata.txt",
-    mime="text/plain"
-)
 
 
 
