@@ -250,12 +250,7 @@ with tab4:
         st.markdown("""
         <a href="https://github.com/purushottambarde17" class="social-btn github" target="_blank">GitHub</a>
         """, unsafe_allow_html=True)
-    
-    placeholder = st.empty()
-    placeholder.success("Thank you for visiting my personal portfolio! ✨")
-    time.sleep(2)
-    placeholder.empty()   # This removes the message
-    
+
 
     # st.markdown("""
     # <a href="https://www.linkedin.com/in/purushottam-barde-9687b51aa/" class="social-btn linkedin" target="_blank">LinkedIn</a>
@@ -271,24 +266,7 @@ with tab4:
 st.divider()
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+placeholder = st.empty()
+placeholder.success("Thank you for visiting my personal portfolio! ✨")
+time.sleep(2)
+placeholder.empty()  
