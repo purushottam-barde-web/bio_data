@@ -102,9 +102,9 @@ st.markdown("<div style='text-align:center'>", unsafe_allow_html=True)
 image = Image.open("Profile_image.jpg")
 st.image(image, use_container_width=False, width=180)
 
-st.title("Purushottam Vyankatrao Barde 🚀")
+st.title("Purushottam Vyankatrao Barde ")
 st.markdown("### Data Scientist | GenAI Engineer")
-st.write("Building Intelligent Systems with AI, LLMs & Cloud ☁️")
+st.write("👨🏼‍💻Building Intelligent Systems with AI, LLMs & Cloud ")
 
 st.markdown("</div>", unsafe_allow_html=True)
 
@@ -112,13 +112,13 @@ st.divider()
 # -------------------------------------------------
 # TABS FOR HIGH ENGAGEMENT
 # -------------------------------------------------
-tab1, tab2, tab3, tab4 = st.tabs(["🧑 Personal", "🎓 Career", "🚀 Projects", "📞 Contact"])
+tab1, tab2, tab3, tab4 = st.tabs(["🧑‍💼 Personal", "🎓 Career", "🚀 Projects", "📞 Contact"])
 
 # -------------------------------------------------
 # PERSONAL DETAILS
 # -------------------------------------------------
 with tab1:
-    st.markdown("## 🧑 Personal Details")
+    st.markdown("## 🧑‍💼 Personal Details")
     st.write("""
     **Birth Date:** 17/10/1997  
     **Birth Time:** 06:00 PM  
@@ -219,6 +219,7 @@ with tab4:
 # DOWNLOAD BIODATA BUTTON
 # -------------------------------------------------
 st.divider()
+
 
 
 
