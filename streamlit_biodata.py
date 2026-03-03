@@ -1,5 +1,6 @@
 import streamlit as st
 from PIL import Image
+import time 
 
 st.set_page_config(
     page_title="Purushottam's Personal Portfolio",
@@ -230,20 +231,70 @@ with tab4:
     📍 Vyankateshwara Nagar, Ring Road, Nanded  
     📞 9420911612  
     """)
+    st.markdown("## 🌐 Connect With Me")
 
-    st.markdown("### 🌐 Connect With Me")
+    # CSS for image buttons
+    st.markdown("""
+    <style>
+    .social-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+
+    .social-container img {
+        width: 60px;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+
+    .social-container img:hover {
+        transform: scale(1.2);
+    }
+    </style>
+    """, unsafe_allow_html=True)
 
     st.markdown("""
-    <a href="https://www.linkedin.com/in/purushottam-barde-9687b51aa/" class="social-btn linkedin" target="_blank">LinkedIn</a>
-    <a href="https://www.youtube.com/@purushottam_barde" class="social-btn youtube" target="_blank">YouTube</a>
-    <a href="https://wa.me/919420911612" class="social-btn whatsapp" target="_blank">WhatsApp</a>
-    <a href="https://github.com/purushottambarde17" class="social-btn github" target="_blank">GitHub</a>
+    <div class="social-container">
+
+        <a href="https://www.linkedin.com/in/purushottam-barde-9687b51aa/" target="_blank">
+            <img src="youtube.png">
+        </a>
+
+        <a href="https://www.youtube.com/@purushottam_barde" target="_blank">
+            <img src="youtube.png">
+        </a>
+
+        <a href="https://wa.me/919420911612" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+        </a>
+
+        <a href="https://github.com/purushottambarde17" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png">
+        </a>
+
+    </div>
     """, unsafe_allow_html=True)
+
+
+    # st.markdown("### 🌐 Connect With Me")
+
+    # st.markdown("""
+    # <a href="https://www.linkedin.com/in/purushottam-barde-9687b51aa/" class="social-btn linkedin" target="_blank">LinkedIn</a>
+    # <a href="https://www.youtube.com/@purushottam_barde" class="social-btn youtube" target="_blank">YouTube</a>
+    # <a href="https://wa.me/919420911612" class="social-btn whatsapp" target="_blank">WhatsApp</a>
+    # <a href="https://github.com/purushottambarde17" class="social-btn github" target="_blank">GitHub</a>
+    # """, unsafe_allow_html=True)
+
+    time.sleep(10)
     st.success("Thank you for visiting my personal portfolio!✨")
 # -------------------------------------------------
 # DOWNLOAD BIODATA BUTTON
 # -------------------------------------------------
 st.divider()
+
 
 
 
