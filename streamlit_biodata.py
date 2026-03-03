@@ -182,6 +182,7 @@ with tab4:
     <a href="https://wa.me/919420911612" class="social-btn whatsapp" target="_blank">WhatsApp</a>
     <a href="https://github.com/purushottambarde17" class="social-btn github" target="_blank">GitHub</a>
     """, unsafe_allow_html=True)
+    st.success("Thank you for visiting my personal portfolio!✨")
 # -------------------------------------------------
 # DOWNLOAD BIODATA BUTTON
 # -------------------------------------------------
@@ -194,7 +195,8 @@ st.download_button(
     mime="text/plain"
 )
 
-st.success("Thank you for visiting my personal portfolio!✨")
+
+
 
 
 
