@@ -231,15 +231,31 @@ with tab4:
     📍 Vyankateshwara Nagar, Ring Road, Nanded  
     📞 9420911612  
     """)
-    st.markdown("## 🌐 Connect With Me")
     st.markdown("### 🌐 Connect With Me")
-
+ta1, ta2, ta3, ta4 = st.tabs(["LinkedIn", "YouTube", "WhatsApp", "Github"])
+with ta1:
     st.markdown("""
     <a href="https://www.linkedin.com/in/purushottam-barde-9687b51aa/" class="social-btn linkedin" target="_blank">LinkedIn</a>
+    """, unsafe_allow_html=True)
+with ta2:
+    st.markdown("""
     <a href="https://www.youtube.com/@purushottam_barde" class="social-btn youtube" target="_blank">YouTube</a>
+    """, unsafe_allow_html=True)
+with ta3:
+    st.markdown("""
     <a href="https://wa.me/919420911612" class="social-btn whatsapp" target="_blank">WhatsApp</a>
+    """, unsafe_allow_html=True)
+with ta4:
+    st.markdown("""
     <a href="https://github.com/purushottambarde17" class="social-btn github" target="_blank">GitHub</a>
     """, unsafe_allow_html=True)
+
+    # st.markdown("""
+    # <a href="https://www.linkedin.com/in/purushottam-barde-9687b51aa/" class="social-btn linkedin" target="_blank">LinkedIn</a>
+    # <a href="https://www.youtube.com/@purushottam_barde" class="social-btn youtube" target="_blank">YouTube</a>
+    # <a href="https://wa.me/919420911612" class="social-btn whatsapp" target="_blank">WhatsApp</a>
+    # <a href="https://github.com/purushottambarde17" class="social-btn github" target="_blank">GitHub</a>
+    # """, unsafe_allow_html=True)
 
     time.sleep(10)
     st.success("Thank you for visiting my personal portfolio!✨")
@@ -247,6 +263,7 @@ with tab4:
 # DOWNLOAD BIODATA BUTTON
 # -------------------------------------------------
 st.divider()
+
 
 
 
